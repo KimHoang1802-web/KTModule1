@@ -1,0 +1,343 @@
+/* ======================TRANG CHỦ =========== */
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0 20px; 
+}
+.logo-ten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.logo-ten h1{
+    margin-left: 10px;
+    align-items: center;
+    margin-top: 9px;
+    font-size: 27px;
+}
+.logo{
+    background-color: plum;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid purple;
+}
+.form-check-input:checked {
+    background-color: green !important;
+    border-color: green !important;
+}
+.header-button button{
+    margin-left: 5px;
+    background-color: #3399FF;
+    border: 1px solid #3399FF;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* CATEGORIES - PRODUCT */
+
+.categories-product{
+    margin-top: 20px;
+}
+/* ============  categories-products ===============*/
+.categories-products{
+    display: flex;
+}
+@media screen and (max-width: 575px){
+    .categories-products{
+        display: flex;
+        flex-direction: column
+    }
+}
+/* ============  categories ===============*/
+.categories{
+    border: 1px solid black;
+    width: 200px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+}
+.categories h5{
+    margin: 10px 20px;
+}
+.categories .check{
+    margin: 10px 20px;
+}
+.categories-button{
+    margin: 10px 20px;
+}
+.categories-button button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #339999;
+    border: 1px solid #009999;
+}
+.categories-button button:hover{
+    background-color: #006666;
+    color: white;
+}
+@media screen and (max-width: 575px){
+    .categories{
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .categories h5{
+        margin: 10px 10px;
+    }
+    .categories .check{
+        margin: 10px 10px;
+    }
+    .categories-button{
+        margin: 10px 10px;
+    }
+    .categories-button button{
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: #339999;
+        border: 1px solid #009999;
+    }
+    .categories-button button:hover{
+        background-color: #006666;
+        color: white;
+    }
+}
+/* ================search-product============*/
+.search-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 62px;
+    margin-left: 20px;
+}
+.search-title .search-1{
+    margin-left: 10px;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+.search-title .search-2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-title .search-2-2{
+    margin-left: 10px;
+    margin-right: 70px;
+}
+@media screen and (max-width: 575px){
+    .search-title{
+        margin-top: 10px;
+        margin-left: 1px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        width: 100%;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+    .search-title .search-2-2{
+        margin-left: 1px;
+    }
+}
+/* ================product============*/
+.product{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+}
+.product-item{
+    width: 200px; 
+    height: 400px;
+    margin-bottom: 10px;
+}
+.product-item img{
+    width: 198px;
+    height: 250px;
+}
+.product-price {
+    display: flex;
+    justify-content: space-between;
+}
+.product-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.product-cart i{
+    background-color: #669966;
+    color: #006600;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-price p:nth-child(1){
+    color: #3399FF;
+}
+.product-price p:nth-child(2){
+    color: red;
+}
+.product-cart i:hover{
+    background-color: #669966;
+    color: wheat;
+}
+.product-tab{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 575px){
+    .product{
+        margin-top: 10px;
+        margin-left: 4px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .product-item{
+        width: 100px;
+        height: 180px;
+        margin-top: 10px;
+    }
+    .product-item img{
+        width: 90px;
+        height: 80px;
+    }
+    .product-text h5{
+        font-size: 10px;
+    }
+    .product-price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+    }
+    .product-cart{
+        display: flex;
+        justify-content: space-between;
+    }
+    .product-cart i{
+        background-color: #669966;
+        color: #006600;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-price p:nth-child(1){
+        color: #3399FF;
+    }
+    .product-price p:nth-child(2){
+        color: red;
+    }
+    .product-cart i:hover{
+        background-color: #669966;
+        color: wheat;
+    }
+    .product-tab{
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+}
+
+/* =================CHI TIẾT SẢN PHẨM =========== */
+
+/* =================GIỎ HÀNG===================== */
+.cart .container h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.information-payment{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========information=========== */
+.information{
+    border: 1px solid black;
+    width: 600px;
+}
+.full-name, .phone-number, .address{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+span{
+    color: red;
+}
+/* ============payment============= */
+.payment{
+    border: 1px solid black;
+    width: 600px;
+}
+.payment h4{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.credit-cart, .your-bank, .momo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.credit-cart1, .your-bank1, .momo1{
+    margin-left: 10px;
+    
+}
+.credit-cart2, .your-bank2, .momo2{
+    margin-right: 20px;
+}
+@media screen and (max-width: 575px){
+    .information-payment{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .information{
+        border: 1px solid black;
+        width: 100%;
+    }
+    .full-name, .phone-number, .address{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .payment{
+        border: 1px solid black;
+        width: 100%;
+    }
+    .payment h4{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .credit-cart, .your-bank, .momo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .credit-cart1, .your-bank1, .momo1{
+        margin-left: 10px;
+        
+    }
+    .credit-cart2, .your-bank2, .momo2{
+        margin-right: 20px;
+    }
+}
+/* ==========cart============== */
